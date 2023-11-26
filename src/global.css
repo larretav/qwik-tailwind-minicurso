@@ -1,4 +1,12 @@
 /**
+ * Tailwind CSS imports
+ * View the full documentation at https://tailwindcss.com
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
  * WHAT IS THIS FILE?
  *
  * Globally applied styles. No matter which components are in the page or matching route,
@@ -77,4 +85,38 @@ html {
 body {
   padding: 0;
   line-height: inherit;
+}
+
+
+.btn {
+  @apply font-medium py-2 px-4 rounded-lg ease-in-out uppercase
+}
+
+
+.btn-primary {
+  @apply bg-purple-600 text-white 
+}
+
+.btn-primary:hover {
+  @apply bg-purple-700
+}
+
+.btn-primary:active {
+  @apply bg-purple-800
+}
+
+.btn-secondary {
+  @apply bg-teal-600 text-white 
+}
+
+.btn-secondary:hover {
+  @apply bg-teal-700
+}
+
+.btn-secondary:active {
+  @apply bg-teal-800
+}
+
+button:disabled {
+  @apply bg-gray-400
 }
